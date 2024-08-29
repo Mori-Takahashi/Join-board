@@ -391,6 +391,9 @@ function closeSingleTaskOverlay() {
         if (taskCardElement) {
             taskCardElement.outerHTML = renderTaskCard(task, key, categoryClass, svgIcons);
         }
+        if (innerHeight <= 1000) {
+            init();
+        }
     }, 500);
 }
 
