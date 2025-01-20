@@ -25,7 +25,7 @@ function renderBigView(id, name, email, phone, color) {
                 <div class="email-big">Email</div>
                 <div class="contact-email-big"><a href="mailto:${email}">${email}</a></div>
                 <div class="phone-big">Phone</div>
-                <div class="contact-phone-big">${phone || ''}</div>
+                <div class="contact-phone-big"><a href="tel:+49${phone || ''}">${phone || ''}</a></div>
             </div>
         </div>
     `
